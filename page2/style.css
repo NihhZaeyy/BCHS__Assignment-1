@@ -1,0 +1,1101 @@
+/* ==================== Fonts ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ==================== Variables ==================== */
+
+  --heading-font-family:'Poppins';
+  --body-font-family: 'Raleway' ;
+  --header-font-family: 'Pacifico';
+
+  --color-main: #f2f5f9;
+  --color-secondary: #ff9c1a ;
+  --color-third: #ec1b09 ;
+  --color-font:#0B0909;
+  --color-mini-card:#F2F7FC;
+  --color-grid-1:#FFEBD1;
+  --color-grid-2:#F2F7FC;
+  --color-grid-3:#FFE3BF;
+  --color-grid-4:#FFEED9;
+  --color-skill-box:#E1E8EF;
+  --color-form-box:#F8FBFB ;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding);
+}
+
+/* ================================ Body ================================ */
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-main);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+}
+/* ================================ Main ================================ */
+#main {
+  width: 1240px;
+  display: flex;
+  background-color: var(--color-main);
+}
+
+/* ================================ Header ================================ */
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 1240px;
+  height: 16px;
+  padding: 62px 0 44px 0;
+  font-family: var(--header-font-family);
+  margin: 0 100px 0 100px;
+  
+  
+  position: fixed;
+  background-color: var(--color-main);
+}
+
+.header__first {
+  color: var(--color-third);
+}
+
+.header__second {
+  color: #ff9c1a;
+}
+
+/* ================================ Profile Card ================================ */
+
+.profile__card {
+  width: 400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 52px;
+  border-radius: 20px;
+
+  margin-top: 122px;
+  margin-bottom: 50px;
+}
+
+.profile__pic-edit {
+  border-radius: 20px;
+}
+
+/* ================================ Profile Name ================================ */
+.profile__identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__name {
+  margin: 14px 0 4px 0;
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.8rem;
+  color: var(--color-font);
+}
+
+/* ================================ Profile Major ================================ */
+
+.profile__major {
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem;
+  color: var(--color-font);
+
+  margin-bottom: 20px;
+}
+
+/* ================================ Profile Socials ================================ */
+
+.profile__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.profile__socials-2 {
+  display: none;
+}
+
+.profile__socials-card {
+  background-color: var(--color-mini-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.socials {
+  padding: 1.294rem 1.55rem;
+  width: 1.25rem;
+}
+
+/* ================================ Profile Contact ================================ */
+
+.profile__contact {
+  width: 350px;
+  height: 316.5px;;
+  margin-top: 22.34px;
+  background-color: var(--color-mini-card);
+  border-radius: 20px;
+  padding-top:2.094rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.profile__contact-card {
+  height: 63px;
+  width: 250px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08) ;
+  
+  display: flex;
+  align-items: center;
+}
+
+.contact__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.utils {
+  width: 2rem;
+  margin: 0 5px;
+}
+
+.contact__text-first, .contact__text-second {
+  font-family: var(--body-font-family);
+}
+
+.contact__text-first {
+  font-size: 0.8733rem;
+}
+
+.contact__text-second {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+}
+
+/* ================================ Download ================================ */
+
+.profile__contact-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 83px 33px 82px;
+}
+
+.profile__contact-download > a {
+  text-decoration: none;
+}
+
+.profile__contact-download-2 {
+  display: none;
+}
+
+.download {
+  width: 185px;
+  height: 44px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 20px;
+  background-color: var(--color-secondary);
+  border-style: none;
+}
+
+.download:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.download__logo {
+  width: 1rem;
+  margin-right: 10px;
+}
+
+.download__text {
+  font-family: var(--body-font-family);
+  color: white;
+  font-weight: var(--font-weight-medium);
+}
+
+/* ================================================================= */
+/* ================================ Content Section ================================ */
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  margin:122px 10px 50px 10px;
+}
+
+.nav__container {
+  width: 820px;
+  height: 102px;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  position: fixed;
+  background-color: var(--color-main);
+  padding-top: 40px;
+}
+
+.navbar {
+  border: 1px solid rgba(0, 0, 0, 0.2) ;
+  width: 503px;
+  height: 100px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 52px;
+}
+
+.navbar__card {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #E1E8EF;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: var(--color-secondary);
+}
+
+.navbar__card.active .nav-text {
+  color: #fff;
+}
+
+.navbar__card.active .fa-house,
+.navbar__card.active .fa-file,
+.navbar__card.active .fa-address-book {
+  color: #fff;
+}
+
+.navbar__card a {
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+}
+
+.fa-house,
+.fa-file,
+.fa-address-book {
+  color: #1a1003;
+}
+
+
+
+
+.navbar__card-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+}
+
+
+
+.navbar__card-text {
+  color: var(--color-font);
+  transition: 0.3s;
+  text-align: center;
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+#resume {
+    height: 700px;
+    width: 820px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 152px 0px 0px 0px;
+
+}
+
+.resume__page {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 111.07px 28px 72px;
+}
+
+.resume__title {
+    max-width: 496px;
+    max-height: 60px;
+    
+    display: flex;
+    align-items: center;
+    
+}
+.resume__title h1 {
+    font-size: 40px;
+    font-family: var(--heading-font-family);
+    color: var(--color-font);
+    font-weight: var(--font-weight-semibold);
+    margin-right: 32px;
+    letter-spacing: 1px;
+}
+
+.resume__experience {
+    display: flex;
+    width: 708.93px;
+    column-gap: 160px;
+}
+
+.resume__experience-2 {
+  display: none;
+}
+
+.resume__experience-edu,
+.resume__experience-exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume__experience-edu > h1,
+.resume__experience-exp > h1 {
+    font-family: var(--heading-font-family);
+    font-size: 1.733rem;
+    font-weight: var(--font-weight-medium);
+    margin-left: 9.25px;
+}
+
+.resume__experience-desc {
+    display: grid;
+    grid-template-columns: repeat(2, 289px );
+    column-gap: 49px;
+    row-gap: 24px;
+}
+
+.resume__desc-box {
+    border-radius: 9.25px;
+    padding: 9.25px;
+
+}
+
+.resume__desc-box > p {
+    margin: 9.25px 0;
+    font-size: 0.867rem;
+}
+
+.resume__desc-box:nth-child(1), 
+.resume__desc-box:nth-child(4) {
+    background-color: var(--color-grid-3);
+}
+
+.resume__desc-box:nth-child(2), 
+.resume__desc-box:nth-child(3) {
+    background-color: var(--color-grid-4);
+}
+
+.year {
+    font-weight: var(--font-weight-regular);
+    color: rgba(26, 16, 3, 0.50);
+    font-family: var(--body-font-family);
+}
+
+.major,
+.loc {
+    font-family: var(--body-font-family);
+    font-weight: var(--font-weight-medium);
+}
+
+.resume__skills-title {
+    display: flex;
+    margin-top: 35.86px;
+    column-gap: 193px;
+    margin-bottom: 8px;
+}
+
+.resume__skills-title > p {
+    font-family: var(--heading-font-family);
+    font-size: 1.734rem;
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+}
+
+.resume__skills-box {
+    height: 175px;
+    width: 619px;
+    column-gap: 82.5px;
+    display: flex;
+}
+
+.resume__skills-icon-work {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 13px;
+    column-gap: 20px;
+    height: 120px;
+}
+
+.resume__skills-icon-soft {
+    margin-right: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 13px;
+    column-gap: 20px;
+    height: 120px;
+}
+
+.skill__icon {
+    font-family: var(--body-font-family);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.75rem;
+    background-color: var(--color-skill-box);
+    padding: 4px 8px;
+    border-radius: 8px;
+    max-width: fit-content;
+    max-height: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume__skills-2 {
+  display: none;
+}
+
+@media only screen and (max-width:1276px) {
+  body {
+    width: 1076px;
+    margin: 0 100px;
+    padding: 0;
+  }
+
+  .header {
+      width: 1076px;
+      position: static;
+  }
+
+  #main {
+      width: 1076px;
+
+  }
+
+  .profile__card {
+      width: 300px;
+      margin-top: 0px;
+  }
+
+  .profile__contact {
+    width: 250px;
+    padding-top: 25px;
+  }
+  .profile__contact-card {
+    width: 200px;
+  }
+
+  .utils {
+      width: 1rem;
+  }
+  .contact__text-first {
+      font-size: 10px;
+  }
+
+  .contact__text-second {
+      font-size: 14px;
+  }
+
+  #intro {
+    margin: 0;
+  }
+
+
+
+  .nav__container {
+      width: 720px;
+      position: static;
+      margin-left: 10px;
+  }
+
+  #resume {
+    width: 720px;
+    margin-top:0 ;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  .resume__page {
+    padding: 28px 25px 37px 30px;
+    width: 680px;
+  }
+
+}
+
+@media only screen and (max-width:1180px) {
+  body,
+  .header,
+  #main {
+      width: 840px;
+
+  }
+
+  .header {
+      position: static;
+  }
+
+  .profile__card {
+      width: 840px;
+      height: 200px;
+      flex-direction: row;
+      padding: 0;
+      align-items: flex-start;
+      margin: 0;
+  }
+
+  .profile__pic-edit,
+  .profile__pic {
+      width: 180px;
+  }
+
+  .profile__pic {
+      margin-top: 10px;
+      margin-left: 30px;
+
+  }
+
+  .profile__identity {
+      width: 300px;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-top: 20px;
+
+  }
+
+  .profile__socials {
+      position: relative;
+      top: 110px;
+      right: 222px;
+      width: 200px;
+  }
+
+  .profile__socials-2 {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 10px;
+      position: relative;
+      top: 30px;
+      right: 110px;
+  }
+
+
+  .profile__contact-download-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 83px 33px 82px;
+      display: block;
+      width: 0px;
+      position: relative;
+      top: 120px;
+      right: 190px;
+  }
+
+
+  
+  .profile__contact-download-2 > a {
+      text-decoration: none;
+  }
+  
+  .download-2 {
+      width: 230px;
+      height: 44px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 20px;
+      background-color: var(--color-secondary);
+      border-style: none;
+  }
+  
+  .download:hover {
+      cursor: pointer;
+      opacity: 0.8;
+  }
+  
+  
+  .download__logo-2 {
+      width: 1rem;
+      margin-right: 10px;
+  }
+  
+  .download__text-2 {
+      font-family: var(--body-font-family);
+      color: white;
+      font-weight: var(--font-weight-medium);
+  }
+
+  .profile__contact {
+      display: none;
+  }
+
+  #intro {
+      width: 840px;
+      position: relative;
+      right: 850px;
+      top: 210px;
+      margin-top: 0;
+      margin-left: 0px;
+  }
+
+  .nav__container {
+      padding-top: 0;
+      width: 840px;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #resume {
+    width: 840px;
+  }
+}
+
+@media only screen and (max-width:956px) {
+  body,
+  .header,
+  #main {
+      width: 640px;
+      margin: 0 50px;
+
+  }
+
+  .header {
+      position: static;
+  }
+
+  .profile__card {
+      width: 640px;
+      height: 200px;
+      flex-direction: row;
+      padding: 0;
+      align-items: flex-start;
+      margin: 0;
+  }
+
+  .profile__pic-edit,
+  .profile__pic {
+      width: 180px;
+  }
+
+  .profile__pic {
+      margin-top: 10px;
+      margin-left: 30px;
+
+  }
+
+  .profile__identity {
+      width: 300px;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-top: 20px;
+
+  }
+
+  .profile__socials {
+      position: relative;
+      top: 100px;
+      right: 150px;
+      width: 1px;
+  }
+
+  .socials,
+  .socials-2 {
+      width: 20px;
+      padding: 10px 15px;
+  }
+
+  .profile__socials-2 {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 10px;
+      position: relative;
+      top: 100px;
+      right: 60px;
+  }
+
+
+  .profile__contact-download-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 83px 33px 82px;
+      display: block;
+      width: 0px;
+      position: relative;
+      top: 153px;
+      right: 326px;
+  }
+
+
+  
+  .profile__contact-download-2 > a {
+      text-decoration: none;
+  }
+  
+  .download-2 {
+      width: 200px;
+      height: 38px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 20px;
+      background-color: var(--color-secondary);
+      border-style: none;
+  }
+  
+  .download:hover {
+      cursor: pointer;
+      opacity: 0.8;
+  }
+  
+  
+  .download__logo-2 {
+      width: 1rem;
+      margin-right: 10px;
+  }
+  
+  .download__text-2 {
+      font-family: var(--body-font-family);
+      color: white;
+      font-weight: var(--font-weight-medium);
+  }
+
+  .profile__contact {
+      display: none;
+  }
+
+  #intro {
+      width: 640px;
+      position: relative;
+      right: 650px;
+      top: 210px;
+      margin-top: 0;
+  }
+
+  .nav__container {
+      padding-top: 0;
+      width: 640px;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .navbar {
+      margin-right: 0;
+  }
+
+  #resume {
+    width: 640px;
+    display: flex;
+    flex-direction: row;
+  }
+  .resume__page {
+    width: 600px;
+    padding: 28px 10px 28px 30px;
+  }
+  .resume__desc-box {
+    width: 200px;
+  }
+
+  .resume__title {
+    width: 600px;
+  }
+
+  .resume__experience {
+    width: 620px;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  body,
+  .header,
+  #main {
+      width: 375px;
+      margin: 0 15px;
+      
+  }
+
+  .header {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+  }
+  #main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 1500px;
+  }
+
+  .profile__card {
+      width: 375px;
+      height: 464px;
+      flex-direction: column;
+      padding:0;
+      padding-bottom: 20px;
+      
+      align-items: center;
+      margin: 0;
+  }
+
+  .profile__pic-edit,
+  .profile__pic {
+      width: 180px;
+  }
+
+  .profile__pic {
+      margin-top: 30px;
+      margin-left: 0px;
+
+  }
+
+  .profile__identity {
+      width: 300px;
+      align-items: center;
+      margin-top: 0px;
+      margin-left: 0;
+
+  }
+
+  .profile__socials {
+      position: relative;
+      top: 10px;
+      right: 0px;
+      width: 1px;
+  }
+
+  .socials,
+  .socials-2 {
+      width: 20px;
+      padding: 10px 15px;
+  }
+
+  .profile__socials-2 {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 10px;
+      position: relative;
+      top: 20px;
+      right: 85px;
+  }
+
+
+  .profile__contact-download-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 83px 33px 82px;
+      display: block;
+      width: 0px;
+      position: relative;
+      top: 30px;
+      right: 100px;
+  }
+
+
+  
+  .profile__contact-download-2 > a {
+      text-decoration: none;
+  }
+  
+  .download-2 {
+      width: 200px;
+      height: 38px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 20px;
+      background-color: var(--color-secondary);
+      border-style: none;
+  }
+  
+  .download:hover {
+      cursor: pointer;
+      opacity: 0.8;
+  }
+  
+  
+  .download__logo-2 {
+      width: 1rem;
+      margin-right: 10px;
+  }
+  
+  .download__text-2 {
+      font-family: var(--body-font-family);
+      color: white;
+      font-weight: var(--font-weight-medium);
+  }
+
+  .profile__contact {
+      display: none;
+  }
+
+  #intro {
+      width: 375px;
+      position: relative;
+      right: 0px;
+      top: 10px;
+      margin-top: 0;
+  }
+
+  .nav__container {
+      padding-top: 0;
+      width: 375px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+  }
+
+  .navbar {
+      margin-right: 0;
+      width: 375px;
+  }
+
+  #resume {
+    width: 355px;
+    height: 1150px;
+    padding: 5px 10px;
+    margin-left: 0;
+  }
+
+  .resume__page {
+    width: 350px;
+    padding: 10px 0px;
+
+  }
+
+  .resume__title {
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .resume__title > h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0;
+
+  }
+  .resume__title > svg {
+    display: none;
+  }
+
+  .resume__experience,
+  .resume__experience-desc {
+    display: none;
+  }
+
+  .resume__experience-2 {
+    display: block;
+  }
+
+  .resume__experience-2,
+  .resume__experience-edu,
+  .resume__experience-exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume__experience-edu > h1,
+  .resume__experience-exp > h1 {
+    margin-top: 0;
+  }
+
+  .resume__desc-box {
+    margin-bottom: 20px;
+  }
+
+  .resume__skills  {
+    display: none;
+  }
+
+  .resume__skills-2 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume__skills-title {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .resume__skills-box {
+    width: 280px;
+    place-items: center;
+  }
+
+  .resume__skills-icon-work,
+  .resume__skills-icon-soft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+}

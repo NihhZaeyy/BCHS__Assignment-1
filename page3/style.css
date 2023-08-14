@@ -1,0 +1,1093 @@
+/* ==================== Fonts ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ==================== Variables ==================== */
+
+  --heading-font-family:'Poppins';
+  --body-font-family: 'Raleway' ;
+  --header-font-family: 'Pacifico';
+
+  --color-main: #f2f5f9;
+  --color-secondary: #ff9c1a ;
+  --color-third: #ec1b09 ;
+  --color-font:#0B0909;
+  --color-mini-card:#F2F7FC;
+  --color-grid-1:#FFEBD1;
+  --color-grid-2:#F2F7FC;
+  --color-grid-3:#FFE3BF;
+  --color-grid-4:#FFEED9;
+  --color-skill-box:#E1E8EF;
+  --color-form-box:#F8FBFB ;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding);
+}
+
+/* ================================ Body ================================ */
+body {
+  width: 100vw;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-main);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+}
+/* ================================ Main ================================ */
+#main {
+  width: 1240px;
+  display: flex;
+  background-color: var(--color-main);
+}
+
+/* ================================ Header ================================ */
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 1240px;
+  height: 16px;
+  padding: 62px 0 44px 0;
+  font-family: var(--header-font-family);
+  margin: 0 100px 0 100px;
+  
+  
+  position: fixed;
+  background-color: var(--color-main);
+}
+
+.header__first {
+  color: var(--color-third);
+}
+
+.header__second {
+  color: #ff9c1a;
+}
+
+/* ================================ Profile Card ================================ */
+
+.profile__card {
+  width: 400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 52px;
+  border-radius: 20px;
+
+  margin-top: 122px;
+  margin-bottom: 50px;
+}
+
+.profile__pic-edit {
+  border-radius: 20px;
+}
+
+/* ================================ Profile Name ================================ */
+.profile__identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__name {
+  margin: 14px 0 4px 0;
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.8rem;
+  color: var(--color-font);
+}
+
+/* ================================ Profile Major ================================ */
+
+.profile__major {
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem;
+  color: var(--color-font);
+
+  margin-bottom: 20px;
+}
+
+/* ================================ Profile Socials ================================ */
+
+.profile__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.profile__socials-2 {
+  display: none;
+}
+
+.profile__socials-card {
+  background-color: var(--color-mini-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.socials {
+  padding: 1.294rem 1.55rem;
+  width: 1.25rem;
+}
+
+/* ================================ Profile Contact ================================ */
+
+.profile__contact {
+  width: 350px;
+  height: 316.5px;;
+  margin-top: 22.34px;
+  background-color: var(--color-mini-card);
+  border-radius: 20px;
+  padding-top:2.094rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.profile__contact-card {
+  height: 63px;
+  width: 250px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08) ;
+  
+  display: flex;
+  align-items: center;
+}
+
+.contact__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.utils {
+  width: 2rem;
+  margin: 0 5px;
+}
+
+.contact__text-first, .contact__text-second {
+  font-family: var(--body-font-family);
+}
+
+.contact__text-first {
+  font-size: 0.8733rem;
+}
+
+.contact__text-second {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+}
+
+/* ================================ Download ================================ */
+
+.profile__contact-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 83px 33px 82px;
+}
+
+.profile__contact-download > a {
+  text-decoration: none;
+}
+
+.profile__contact-download-2 {
+  display: none;
+}
+
+.download {
+  width: 185px;
+  height: 44px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 20px;
+  background-color: var(--color-secondary);
+  border-style: none;
+}
+
+.download:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.download__logo {
+  width: 1rem;
+  margin-right: 10px;
+}
+
+.download__text {
+  font-family: var(--body-font-family);
+  color: white;
+  font-weight: var(--font-weight-medium);
+}
+
+/* ================================================================= */
+/* ================================ Content Section ================================ */
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  margin:122px 0px 50px 10px;
+}
+
+.nav__container {
+  width: 820px;
+  height: 142px;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  background-color: var(--color-main);
+}
+
+.navbar {
+  border: 1px solid rgba(0, 0, 0, 0.2) ;
+  width: 503px;
+  height: 100px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 52px;
+}
+
+.navbar__card {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #E1E8EF;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: var(--color-secondary);
+}
+
+.navbar__card.active .nav-text {
+  color: #fff;
+}
+
+
+.navbar__card.active .fa-address-book {
+  color: #fff;
+}
+
+.navbar__card a {
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+}
+
+.fa-house,
+.fa-file,
+.fa-address-book {
+  color: #1a1003;
+}
+
+.navbar__card-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+}
+
+
+
+.navbar__card-text {
+  color: var(--color-font);
+  transition: 0.3s;
+  text-align: center;
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+#contact {
+    height: 700px;
+    width: 820px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0px 10px 50px 0px;
+}
+
+.contact__page {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0px 28px 72px;
+}
+
+.contact__title {
+    max-width: 496px;
+    max-height: 60px;
+    
+    display: flex;
+    align-items: center;
+}
+.contact__title h1 {
+    font-size: 40px;
+    font-family: var(--heading-font-family);
+    color: var(--color-font);
+    font-weight: var(--font-weight-semibold);
+    margin-right: 32px;
+    letter-spacing: 1px;
+}
+
+.contact__cards {
+    width: 693px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contact__card {
+    width: 273px;
+    height: 98px;
+    border-radius: 20px;
+    background-color: var(--color-grid-3);
+    display: flex; 
+    padding: 30px 26px;
+}
+
+.contact__card:nth-child(2) {
+    background-color: var(--color-grid-2);
+}
+
+.contact__card-text {
+    font-size: 1rem;
+    font-family: var(--heading-font-family);
+    font-weight: var(--font-weight-medium);
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+}
+
+.contact__form {
+    width: 599px ;
+    height: 327px;
+    padding: 29px 66px 46px 29px;
+    margin-top: 32px;
+    border-radius: 20px;
+    background-color: var(--color-form-box);
+}
+
+.form__text {
+    padding: 10px;
+    width: 579px;
+    height: 68px;
+    
+    font-family: var(--body-font-family);
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    line-height: 30px;
+    letter-spacing: 0.4px;
+}
+
+.form__name {
+    display: flex;
+    width: 579px;
+    height: 39px;
+    padding: 0 10px;
+    margin-bottom: 23px;
+}
+
+.form-list {
+    color: #000;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid #000;
+}
+
+.form-input {
+    display: flex;
+    align-items: end;
+}
+
+.input1,
+.input2,
+.input3 {
+    height: 19px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    background-color: var(--color-form-box);
+    padding-left:9px ;
+}
+
+.input1 {
+    width: 528.5px;
+}
+
+.input2 {
+    width: 532px;
+}
+.input3 {
+    width: 505.4px;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back__submit {
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 101px;
+    height: 40px;
+    border-radius: 20px;
+    background:linear-gradient(to right, #FD8A18, #EE2C0B);
+}   
+
+.contact__submit {
+    position: relative;
+    right: 109px;
+    height:36px;
+    width: 97px;
+    border-radius: 20px;
+    background: var(--color-form-box);
+    margin-top: 3px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__submit:hover {
+    color: #fff;
+    background:linear-gradient(to right, #FD8A18, #EE2C0B) ;
+}
+
+@media only screen and (max-width:1276px) {
+  body {
+      width: 1076px;
+      margin: 0 100px;
+      padding:0;
+  }
+
+  .header {
+      width: 1076px;
+      position: static;
+  }
+
+  #main {
+      width: 1076px;
+
+  }
+
+  .profile__card {
+      width: 300px;
+      margin-top: 0px;
+  }
+  .profile__contact {
+      width: 250px;
+      padding-top: 25px;
+  }
+
+  .profile__contact-card {
+      width: 200px;
+  }
+
+  .utils {
+      width: 1rem;
+  }
+  .contact__text-first {
+      font-size: 10px;
+  }
+
+  .contact__text-second {
+      font-size: 14px;
+  }
+  .nav__container {
+      width: 720px;
+  }
+  #intro {
+    margin-top: 0px;
+  }
+
+  #contact {
+    width: 720px;
+  }
+
+  .contact__page {
+    padding-left: 20px;
+  }
+
+  .contact__cards {
+    width: 675px;
+  }
+
+  .contact__form {
+    margin-top: 15px;
+    width: 650px;
+    padding-right: 10px;
+    padding-left:15px ;
+  }
+}
+
+@media only screen and (max-width:1180px) {
+  body,
+  .header,
+  #main {
+      width: 840px;
+
+  }
+
+  .header {
+      position: static;
+  }
+
+  .profile__card {
+      width: 840px;
+      height: 200px;
+      flex-direction: row;
+      padding: 0;
+      align-items: flex-start;
+      margin: 0;
+  }
+
+  .profile__pic-edit,
+  .profile__pic {
+      width: 180px;
+  }
+
+  .profile__pic {
+      margin-top: 10px;
+      margin-left: 30px;
+
+  }
+
+  .profile__identity {
+      width: 300px;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-top: 20px;
+
+  }
+
+  .profile__socials {
+      position: relative;
+      top: 110px;
+      right: 222px;
+      width: 200px;
+  }
+
+  .profile__socials-2 {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 10px;
+      position: relative;
+      top: 30px;
+      right: 110px;
+  }
+
+
+  .profile__contact-download-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 83px 33px 82px;
+      display: block;
+      width: 0px;
+      position: relative;
+      top: 120px;
+      right: 190px;
+  }
+
+
+  
+  .profile__contact-download-2 > a {
+      text-decoration: none;
+  }
+  
+  .download-2 {
+      width: 230px;
+      height: 44px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 20px;
+      background-color: var(--color-secondary);
+      border-style: none;
+  }
+  
+  .download:hover {
+      cursor: pointer;
+      opacity: 0.8;
+  }
+  
+  
+  .download__logo-2 {
+      width: 1rem;
+      margin-right: 10px;
+  }
+  
+  .download__text-2 {
+      font-family: var(--body-font-family);
+      color: white;
+      font-weight: var(--font-weight-medium);
+  }
+
+  .profile__contact {
+      display: none;
+  }
+
+  #intro {
+      width: 840px;
+      position: relative;
+      right: 850px;
+      top: 210px;
+      margin-top: 0;
+  }
+
+  .nav__container {
+    width: 840px;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact {
+    margin: 0;
+    width: 840px;
+  }
+
+  .contact__page {
+    padding: 28px 25px 37px 30px;
+    width: 800px;
+  }
+
+  .contact__cards {
+    width: 800px;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .contact__form {
+    width: 640px;
+  }
+
+
+}
+
+@media only screen and (max-width:956px) {
+  body,
+  .header,
+  #main {
+      width: 640px;
+      margin: 0 50px;
+
+  }
+
+  .header {
+      position: static;
+  }
+
+  .profile__card {
+      width: 640px;
+      height: 200px;
+      flex-direction: row;
+      padding: 0;
+      align-items: flex-start;
+      margin: 0;
+  }
+
+  .profile__pic-edit,
+  .profile__pic {
+      width: 180px;
+  }
+
+  .profile__pic {
+      margin-top: 10px;
+      margin-left: 30px;
+
+  }
+
+  .profile__identity {
+      width: 300px;
+      align-items: flex-start;
+      margin-left: 20px;
+      margin-top: 20px;
+
+  }
+
+  .profile__socials {
+      position: relative;
+      top: 100px;
+      right: 150px;
+      width: 1px;
+  }
+
+  .socials,
+  .socials-2 {
+      width: 20px;
+      padding: 10px 15px;
+  }
+
+  .profile__socials-2 {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 10px;
+      position: relative;
+      top: 100px;
+      right: 60px;
+  }
+
+
+  .profile__contact-download-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 83px 33px 82px;
+      display: block;
+      width: 0px;
+      position: relative;
+      top: 153px;
+      right: 326px;
+  }
+
+
+  
+  .profile__contact-download-2 > a {
+      text-decoration: none;
+  }
+  
+  .download-2 {
+      width: 200px;
+      height: 38px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 20px;
+      background-color: var(--color-secondary);
+      border-style: none;
+  }
+  
+  .download:hover {
+      cursor: pointer;
+      opacity: 0.8;
+  }
+  
+  
+  .download__logo-2 {
+      width: 1rem;
+      margin-right: 10px;
+  }
+  
+  .download__text-2 {
+      font-family: var(--body-font-family);
+      color: white;
+      font-weight: var(--font-weight-medium);
+  }
+
+  .profile__contact {
+      display: none;
+  }
+
+  #intro {
+      width: 640px;
+      position: relative;
+      right: 650px;
+      top: 210px;
+      margin-top: 0;
+  }
+
+  .nav__container {
+      padding-top: 0;
+      width: 640px;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .navbar {
+      margin-right: 0;
+  }
+
+  #contact {
+    width: 640px;
+  }
+
+  .contact__cards {
+    width: 585px;
+  }
+
+  .contact__form {
+    width: 560px;
+  }
+
+  .form__text {
+    width: 540px;
+  }
+
+  .input1 {
+    width: 487px;
+  }
+
+  .input2 {
+    width: 492px;
+  }
+  .input3 {
+    width: 465.5px;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  body,
+  .header,
+  #main {
+      width: 375px;
+      margin: 0 15px;
+      
+  }
+
+  .header {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+  }
+  #main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 1500px;
+  }
+
+  .profile__card {
+      width: 375px;
+      height: 464px;
+      flex-direction: column;
+      padding:0;
+      padding-bottom: 20px;
+      
+      align-items: center;
+      margin: 0;
+  }
+
+  .profile__pic-edit,
+  .profile__pic {
+      width: 180px;
+  }
+
+  .profile__pic {
+      margin-top: 30px;
+      margin-left: 0px;
+
+  }
+
+  .profile__identity {
+      width: 300px;
+      align-items: center;
+      margin-top: 0px;
+      margin-left: 0;
+
+  }
+
+  .profile__socials {
+      position: relative;
+      top: 10px;
+      right: 0px;
+      width: 1px;
+  }
+
+  .socials,
+  .socials-2 {
+      width: 20px;
+      padding: 10px 15px;
+  }
+
+  .profile__socials-2 {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 10px;
+      position: relative;
+      top: 20px;
+      right: 85px;
+  }
+
+
+  .profile__contact-download-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 83px 33px 82px;
+      display: block;
+      width: 0px;
+      position: relative;
+      top: 30px;
+      right: 100px;
+  }
+
+
+  
+  .profile__contact-download-2 > a {
+      text-decoration: none;
+  }
+  
+  .download-2 {
+      width: 200px;
+      height: 38px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      border-radius: 20px;
+      background-color: var(--color-secondary);
+      border-style: none;
+  }
+  
+  .download:hover {
+      cursor: pointer;
+      opacity: 0.8;
+  }
+  
+  
+  .download__logo-2 {
+      width: 1rem;
+      margin-right: 10px;
+  }
+  
+  .download__text-2 {
+      font-family: var(--body-font-family);
+      color: white;
+      font-weight: var(--font-weight-medium);
+  }
+
+  .profile__contact {
+      display: none;
+  }
+
+  #intro {
+      width: 375px;
+      position: relative;
+      right: 0px;
+      top: 10px;
+      margin-top: 0;
+  }
+
+  .nav__container {
+      padding-top: 0;
+      width: 375px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .navbar {
+      margin-right: 10px;
+      width: 375px;
+  }
+
+  #contact {
+    width: 375px;
+    height: 850px;
+  }
+
+  .contact__page {
+    width: 375px;
+    padding: 5px 10px;
+  }
+
+  .contact__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__title > h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact__title > svg {
+    display: none;
+  }
+
+  .contact__cards {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact__form {
+    padding-left: 10px;
+    width: 335px;
+  }
+
+  .form__text {
+    width: 320px;
+    margin-bottom: 30px;
+  }
+
+  .input1 {
+    width: 248.5px;
+  }
+
+  .input2 {
+    width: 252px;
+  }
+
+  .input3 {
+    width: 225px;
+  }
+
+  .form__name {
+    width: 300px;
+  }
+}
