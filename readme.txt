@@ -7,5 +7,5 @@ page 1, page 2, page 3 full responsive
 
 untuk bagian test, hanya ngide hehe,
     - 1440x1024 only
-    - using js for changing color navbar when clicked
+    - using js for changing color navbar when clicked and for declare scroll padding height
     - tpi buat changing color navbar ketika scroll blm ngerti
