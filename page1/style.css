@@ -66,7 +66,6 @@ body {
     margin: 0 100px 0 100px;
     
     
-    position: fixed;
     background-color: var(--color-main);
 }
 
@@ -90,7 +89,6 @@ body {
     padding-top: 52px;
     border-radius: 20px;
 
-    margin-top: 122px;
     margin-bottom: 50px;
 }
 
@@ -254,7 +252,7 @@ body {
 #intro {
     display: flex;
     flex-direction: column;
-    margin:122px 10px 50px 10px;
+    margin:0px 10px 50px 10px;
 }
 
 .nav__container {
@@ -1083,6 +1081,7 @@ body {
 
     .service__card {
         width: 300px ;
+        height: 165px;
     }
 
     .service__card-title {
